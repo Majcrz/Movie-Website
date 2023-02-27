@@ -1,0 +1,154 @@
+header{
+ 
+    background-image: linear-gradient( to right bottom,rgba(0, 0, 0, 0.925),rgba(0,0,0,0.3),rgba(0,0,0,0.2),rgba(0,0,0,0.1),rgba(0,0,0,0.0) );
+    color: #fff;
+    position: relative;
+    z-index: 999;
+
+
+}
+.logo img{
+    width: 150px;
+    margin-left: 5px;
+}
+header a{
+    margin-left: 30px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+header button{
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    background: none;
+    font-weight: bold;
+
+}
+.toggle{
+    display: none;
+    
+}
+.account{
+    display: flex;
+    justify-content: end;
+ 
+    width: 400px;
+
+}
+
+.input_tag{
+
+    width: 90%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+  }
+  .search_icon{
+   
+    width: 10%;
+    height: 70%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-left: 1px solid white;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .input_tag input{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px 0px 0px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  datalist{
+    display: flex;
+    flex-direction: column;
+   color: rgb(255, 247, 0);
+   background-color: rgba(83, 83, 83, 0.568);
+   position: absolute;
+   z-index: -1;
+   gap: 10px;
+   top: 35%;
+   margin-top: 6vh;
+   left: 50%;
+
+  cursor: pointer;
+  border-radius: 10px;
+  }
+  .option img{
+    width: 20px;
+    height: 30px;
+  }
+  .option{
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .option:hover{
+    color: rgb(159, 159, 226);
+    font-weight: 900;
+  }
+
+
+  @media (max-width: 468px){
+   .account{
+    padding-right: 30px;
+   }
+
+  }
+
+
+
+
+  @media (max-width: 768px){
+    header nav .flexSB{
+        display: none;
+    }
+    .account{
+        display: flex;
+        width: 200px;
+       
+    }
+    .navMenu-list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(68, 68, 218);
+        width: 50%;
+        height: 100vh;
+        z-index: 999;
+        justify-content:space-evenly ;
+
+    }
+    header ul li{
+    margin-top: 30px ;
+    padding: 0 50px;
+    }
+    .toggle{
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        margin: auto;
+        cursor: pointer;
+        background: none;
+    }
+  }
